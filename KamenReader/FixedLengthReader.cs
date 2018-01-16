@@ -35,7 +35,7 @@ namespace KamenReader
                     if (firstRowAreTitles && row == 1)
                         result.Titles.Add(cleaned);
                     else
-                        result.Data.Add(new GridData { Row = row, Column = col, CellValue = cleaned });
+                        result.Data.Add(new GridData { Row = row, Column = currentMap.StartAt, CellValue = cleaned });
                 }
             }
 
